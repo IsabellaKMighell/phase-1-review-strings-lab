@@ -15,11 +15,17 @@ the user experience by adding some custom greeting capabilities.
 
 ## Work Through Failing Tests in a JavaScript Test Suite
 
-To start off, let's run the test suite with the `learn` command. Our code is
-currently failing all of the tests, but we expected that because we haven't done
-anything yet. Let's get to work!
+If you haven't already, fork and clone this lab into your local environment.
+Remember to **fork** a copy into your GitHub account first, then **clone** from
+that copy. Navigate into its directory in the terminal, then run `code .` to
+open the files in Visual Studio Code.
 
-#### `currentUser`
+Next, let's run `npm install` to install the dependencies then run the test
+suite with the `npm test` command. Our code is currently failing all of the
+tests, but we expected that because we haven't done anything yet. Let's get to
+work!
+
+### `currentUser`
 
 The first test is telling us that `currentUser` is not defined. Let's go to
 `index.js` and write the following code:
@@ -36,7 +42,7 @@ const currentUser = 'Grace Hopper';
 
 Rerun the tests and you should see that the first one is passing.
 
-#### `welcomeMessage`
+### `welcomeMessage`
 
 The next failing test is similarly helpful, telling us exactly what we have to
 fix: `welcomeMessage contains "Welcome to Flatbook, "`.
@@ -209,7 +215,7 @@ Four tests down, six to go!
 
 ## Read the MDN Documentation on String Methods and Practice Using a Few
 
-#### `excitedWelcomeMessage`
+### `excitedWelcomeMessage`
 
 Sometimes we get so excited when someone logs into their Flatbook account that
 we just want to shout out loud. We *could* copy over most of the code from
@@ -409,6 +415,13 @@ const currentUser = 'Grace Hopper';
 const shortGreeting = `Welcome, ${currentUser.slice(0, 1)}!`;
 ```
 
+After you have all the tests passing, remember to commit and push your changes
+up to GitHub, then submit your work to Canvas using CodeGrade. If you need a
+reminder, go back to the [Completing and Submitting Assignments with
+CodeGrade][completing-codegrade] lesson to review the process.
+
+[completing-codegrade]: https://github.com/learn-co-curriculum/phase-1-completing-assignments-with-codegrade
+
 Great work!
 
 ## Resources
@@ -419,9 +432,9 @@ Great work!
 - [MDN — String — `.length`][length]
 - [MDN — String — Character access][character access]
 - [MDN — String — Methods][string methods]
-  + [MDN — `.toUpperCase()`][toUpperCase]
-  + [MDN — `.toLowerCase()`][toLowerCase]
-  + [MDN — `.slice()`][slice]
+  - [MDN — `.toUpperCase()`][toUpperCase]
+  - [MDN — `.toLowerCase()`][toLowerCase]
+  - [MDN — `.slice()`][slice]
 
 [open JS console]: https://webmasters.stackexchange.com/questions/8525/how-do-i-open-the-javascript-console-in-different-browsers/77337#77337
 [template literals]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals
